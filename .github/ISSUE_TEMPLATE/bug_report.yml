@@ -1,0 +1,24 @@
+name: 问题反馈
+description: 报告可复现的问题，请移除密钥和私人数据
+body:
+  - type: input
+    id: version
+    attributes:
+      label: App / Android 版本
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期行为
+  - type: textarea
+    id: protocol
+    attributes:
+      label: 协议、模型 ID 与 HTTP 状态（脱敏）
+      description: 不提供 API Key、带签名 URL 或私人聊天。
